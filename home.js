@@ -9,6 +9,6 @@ let person = {
 };
 let now = new Date();
 
-clickButton("Welcome!", "button")
+clickButton('button');
 showMessage(now.toDateString(),"date", "red");
 showMessage(person.showInfo(),"message", "blue");
