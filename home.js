@@ -7,4 +7,8 @@ let person = {
         return (this.name + " is " + this.age);
     }
 };
-showMessage(person.showInfo());
+let now = new Date();
+
+clickButton("Welcome!", "button")
+showMessage(now.toDateString(),"date", "red");
+showMessage(person.showInfo(),"message", "blue");
