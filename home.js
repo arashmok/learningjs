@@ -9,6 +9,16 @@ let person = {
 };
 let now = new Date();
 
+const values = ['a', 'b', 'c'];
+const set = values.filter(function (item) {
+    return item > 'b';
+});
+values.forEach(function (item) {
+    console.log(item);
+})
+
+
 clickButton('button');
 showMessage(now.toDateString(),"date", "red");
 showMessage(person.showInfo(),"message", "blue");
+showMessage(set, "array", "black")
